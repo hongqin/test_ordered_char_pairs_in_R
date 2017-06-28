@@ -1,0 +1,18 @@
+---
+title: "_order_ORF"
+author: "H Qin"
+date: "6/28/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+name1 = c("apple",  "banana", "dog", "cat")
+name2 = c("banana", "apple",  "cat", "dog")
+tb = cbind(name1, name2)
+```
+
