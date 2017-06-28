@@ -9,10 +9,26 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r}
+big2small = function(char1, char2) {
+  if ( char1 > char2) {
+    return( c( char1, char2) )
+  } else {
+    return( c(char2, char1) )
+  }
+}
+```
 
 ```{r}
 name1 = c("apple",  "banana", "dog", "cat")
 name2 = c("banana", "apple",  "cat", "dog")
 tb = cbind(name1, name2)
+```
+
+```{r}
+for( i in 1:4){
+  return= big2small(tb[i, 1], tb[i, 2])
+  print(return)
+}
 ```
 
